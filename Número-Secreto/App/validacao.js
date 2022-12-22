@@ -16,6 +16,7 @@ function validacaoChute(chute) {
         document.body.innerHTML += `
         <h2>Parabéns, você acertou</h2>
         <h3>O número secreto era ${numeroSecreto}
+        <input type="button" onclick="jogarNovamente()" value="Jogar Novamente">
         `
     } else if (num > numeroSecreto) {
         elementoChute.innerHTML += `
@@ -30,4 +31,7 @@ function validacaoChute(chute) {
 
 function chuteInvalido(num) {
     return Number.isNaN(num);
+}
+function jogarNovamente() {
+    location.reload()
 }
