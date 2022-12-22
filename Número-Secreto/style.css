@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+:root{
+    --font-family: 'MonteCarlo', sans-serif;
+    --bg-color: #0AA1DD;
+
+    --prymary-color: #E8F9FD;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--prymary-color);
+}
+
+h1 {
+    font-size: 10em;
+    
+}
+
+h3 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 7em;
+}
+.mensagem  {
+    font-size: 3em;
+   margin-top: 40px; 
+}
+
+.box {
+    border: 2px solid var(--prymary-color);
+    display: inline-block;
+    font-size: 3em;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    padding-right: 10%;
+}
+
+@media only screen and (max-device-width: 900px) {
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 4em;
+    }
+    h3 {
+        font-size: 3em;
+    }
+
+}
